@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import App from "./components/App";
 
-import { applicationName } from "./constants/appConstants";
+import { APPLICATION_NAME } from "./constants/app.constants";
 
 const root: ReactDOM.Root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -11,6 +11,6 @@ const root: ReactDOM.Root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App applicationName={applicationName} />
+    <App applicationName={APPLICATION_NAME} />
   </React.StrictMode>,
 );
