@@ -3,6 +3,8 @@ warehouse-ui
 
 ### Inventory management application's frontend.
 
+[![Continuous integration](https://github.com/Netsurfclub/warehouse-ui/actions/workflows/build.yml/badge.svg)](https://github.com/Netsurfclub/warehouse-ui/actions/workflows/build.yml)
+
 [Contributing Guide](.github/CONTRIBUTING.md)
 
 Prerequisites
