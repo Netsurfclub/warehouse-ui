@@ -1,0 +1,3 @@
+interface AppProps {
+  applicationName: string;
+}
