@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 import App from "./components/App";
@@ -10,7 +10,7 @@ const root: ReactDOM.Root = ReactDOM.createRoot(
 );
 
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <App applicationName={applicationName} />
-  </StrictMode>,
+  </React.StrictMode>,
 );
