@@ -5,6 +5,7 @@ interface Page {
 
 interface Pages {
   MAIN_PAGE: Page;
+  INVENTORY_PAGE: Page;
   PAGE_1: Page;
   PAGE_2: Page;
   ERROR_PAGE: Page;
