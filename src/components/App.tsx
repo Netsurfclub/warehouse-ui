@@ -1,17 +1,18 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./common/Navbar";
 import MainPage from "./pages/MainPage";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
+import ErrorPage from "./pages/ErrorPage";
 
 import pages from "../constants/page.constants";
 
 import "../index.css";
 
 const App: React.FC<AppProps> = ({ applicationName }) => {
-  const { MAIN_PAGE, PAGE_1, PAGE_2 } = pages;
+  const { MAIN_PAGE, PAGE_1, PAGE_2, ERROR_PAGE } = pages;
 
   return (
     <BrowserRouter>
@@ -37,6 +38,11 @@ const App: React.FC<AppProps> = ({ applicationName }) => {
             path={PAGE_2.path}
             element={<Page2 pageName={PAGE_2.name} />}
           />
+          <Route
+            path={ERROR_PAGE.path}
+            element={<ErrorPage pageName={ERROR_PAGE.name} />}
+          />
+          <Route path={"*"} element={<Navigate to={ERROR_PAGE.path} />} />
         </Routes>
       </main>
     </BrowserRouter>

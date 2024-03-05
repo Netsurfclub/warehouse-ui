@@ -11,6 +11,10 @@ const pages: Pages = {
     name: "Page 2",
     path: "/page2",
   },
+  ERROR_PAGE: {
+    name: "Error",
+    path: "/error",
+  },
 };
 
 export default pages;
