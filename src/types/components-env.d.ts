@@ -4,10 +4,14 @@ interface AppProps {
 
 interface NavbarProps {
   title: string;
-  homeRoute: string;
-  routes: Page[];
+  mainPagePath: string;
+  paths: Page[];
 }
 
 interface PageProps {
   pageName: string;
+}
+
+interface ErrorPageProps {
+  mainPagePath: string;
 }
