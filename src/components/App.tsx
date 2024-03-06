@@ -19,7 +19,7 @@ const App: React.FC<AppProps> = ({ applicationName }) => {
       <Navbar
         title={applicationName}
         mainPagePath={MAIN_PAGE.path}
-        paths={[
+        pages={[
           { name: PAGE_1.name, path: PAGE_1.path },
           { name: PAGE_2.name, path: PAGE_2.path },
         ]}

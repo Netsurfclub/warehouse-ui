@@ -5,7 +5,7 @@ interface AppProps {
 interface NavbarProps {
   title: string;
   mainPagePath: string;
-  paths: Page[];
+  pages: Page[];
 }
 
 interface PageProps {
