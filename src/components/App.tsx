@@ -19,8 +19,8 @@ const App: React.FC<AppProps> = ({ applicationName }) => {
     <BrowserRouter>
       <Navbar
         title={applicationName}
-        homeRoute={MAIN_PAGE.path}
-        routes={[
+        mainPagePath={MAIN_PAGE.path}
+        pages={[
           { name: INVENTORY_PAGE.name, path: INVENTORY_PAGE.path },
           { name: PAGE_1.name, path: PAGE_1.path },
           { name: PAGE_2.name, path: PAGE_2.path },
@@ -46,7 +46,7 @@ const App: React.FC<AppProps> = ({ applicationName }) => {
           />
           <Route
             path={ERROR_PAGE.path}
-            element={<ErrorPage pageName={ERROR_PAGE.name} />}
+            element={<ErrorPage mainPagePath={MAIN_PAGE.path} />}
           />
           <Route path={"*"} element={<Navigate to={ERROR_PAGE.path} />} />
         </Routes>
