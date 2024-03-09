@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar: React.FC<NavbarProps> = ({ title, mainPagePath, pages }) => {
+const Navbar: React.FC<NavbarProps> = ({ image, pages }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const getNavbarTogglerClass = (): string => "navbar-toggler";
@@ -15,9 +15,13 @@ const Navbar: React.FC<NavbarProps> = ({ title, mainPagePath, pages }) => {
     <header>
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
         <div className="container">
-          <Link className="navbar-brand" to={mainPagePath}>
-            {title}
-          </Link>
+          <div className="mt-2 mb-2">
+            <img
+              src={image}
+              alt="logo"
+              style={{ width: "180px", height: "80px" }}
+            />
+          </div>
           <button
             className={
               isOpen

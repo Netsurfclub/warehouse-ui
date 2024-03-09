@@ -11,15 +11,17 @@ import pages from "../constants/page.constants";
 
 import "../index.css";
 
-const App: React.FC<AppProps> = ({ applicationName }) => {
+import logo from "../images/logo.png";
+
+const App: React.FC<AppProps> = () => {
   const { MAIN_PAGE, PAGE_1, PAGE_2, ERROR_PAGE } = pages;
 
   return (
     <BrowserRouter>
       <Navbar
-        title={applicationName}
-        mainPagePath={MAIN_PAGE.path}
+        image={logo}
         pages={[
+          { name: MAIN_PAGE.name, path: MAIN_PAGE.path },
           { name: PAGE_1.name, path: PAGE_1.path },
           { name: PAGE_2.name, path: PAGE_2.path },
         ]}
