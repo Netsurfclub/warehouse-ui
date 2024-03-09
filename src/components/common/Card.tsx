@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, contents }) => {
       </label>
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
-        {contents.map((content) => (
+        {contents.map((content: KeyValuePair<string, string>) => (
           <p className="card-text" key={content.key}>
             {content.value}
           </p>
