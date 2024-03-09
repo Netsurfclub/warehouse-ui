@@ -1,4 +1,4 @@
-// TODO: Clean up this file later.
+// TODO: Clean up this file later when backend is set up.
 export const getInventory = (): Inventory[] => {
   return [
     {
