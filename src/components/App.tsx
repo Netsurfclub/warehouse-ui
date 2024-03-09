@@ -12,16 +12,13 @@ import "../index.css";
 import logo from "../images/logo.png";
 
 const App: React.FC<AppProps> = () => {
-  const { MAIN_PAGE, INVENTORY_PAGE, ERROR_PAGE } = pages;
+  const { INVENTORY_PAGE, ERROR_PAGE } = pages;
 
   return (
     <BrowserRouter>
       <Navbar
         image={logo}
-        pages={[
-          { name: MAIN_PAGE.name, path: MAIN_PAGE.path },
-          { name: INVENTORY_PAGE.name, path: INVENTORY_PAGE.path },
-        ]}
+        pages={[{ name: INVENTORY_PAGE.name, path: INVENTORY_PAGE.path }]}
       />
       <main className="container">
         <Routes>

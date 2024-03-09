@@ -1,8 +1,4 @@
 const pages: Pages = {
-  MAIN_PAGE: {
-    name: "Main Page",
-    path: "/",
-  },
   INVENTORY_PAGE: {
     name: "Raktárkészlet",
     path: "/inventory",

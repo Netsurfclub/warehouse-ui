@@ -34,7 +34,6 @@ interface PageProps {
 // Collection types
 
 interface Pages {
-  MAIN_PAGE: Page;
   INVENTORY_PAGE: Page;
   ERROR_PAGE: Page;
 }
