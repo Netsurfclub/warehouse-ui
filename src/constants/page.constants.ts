@@ -3,6 +3,10 @@ const pages: Pages = {
     name: "Main Page",
     path: "/",
   },
+  INVENTORY_PAGE: {
+    name: "Raktárkészlet",
+    path: "/inventory",
+  },
   PAGE_1: {
     name: "Page 1",
     path: "/page1",
