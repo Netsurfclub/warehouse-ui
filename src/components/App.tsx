@@ -13,7 +13,7 @@ import "../index.css";
 
 import logo from "../images/logo.png";
 
-const App: React.FC<AppProps> = ({ applicationName }) => {
+const App: React.FC<AppProps> = () => {
   const { MAIN_PAGE, PAGE_1, PAGE_2, ERROR_PAGE } = pages;
 
   return (
