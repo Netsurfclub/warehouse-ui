@@ -9,8 +9,8 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, contents }) => {
           alt={imageAlt}
           className="card-img-top"
           style={{
-            width: "250px",
-            height: "250px",
+            width: "200px",
+            height: "200px",
             display: "block",
             margin: "0 auto",
             objectFit: "contain",
