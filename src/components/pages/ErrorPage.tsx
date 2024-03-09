@@ -2,7 +2,7 @@ import React from "react";
 
 import image from "../../images/unplugged_cable.jpg";
 
-const ErrorPage: React.FC<ErrorPageProps> = () => {
+const ErrorPage: React.FC<PageProps> = () => {
   return (
     <div className="row">
       <div className="col-12">
