@@ -1,5 +1,4 @@
 // TODO: Clean up this file later.
-
 export const getInventory = (): Inventory[] => {
   return [
     {
@@ -7,7 +6,7 @@ export const getInventory = (): Inventory[] => {
         name: "6-os csavar",
         price: 150,
         description: "Lorem ipsum dolor sit amet..",
-        photo: "image.jpg",
+        photo: "sample_image.jpg",
       },
       pieces: 1000,
       unit: "darab",
@@ -27,7 +26,7 @@ export const getInventory = (): Inventory[] => {
         name: "6-os csavar alátét (rugós)",
         price: 25,
         description: "Lorem ipsum dolor sit amet..",
-        photo: "image.jpg",
+        photo: null,
       },
       pieces: 1000,
       unit: "darab",
