@@ -9,7 +9,7 @@ interface NavbarProps {
 
 interface CardProps {
   title: string;
-  imageSource: string;
+  image: string;
   imageAlt: string;
   contents: KeyValuePair<string, string>[];
 }

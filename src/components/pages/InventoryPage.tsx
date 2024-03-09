@@ -16,7 +16,7 @@ const InventoryPage: React.FC<PageProps> = () => {
         <div className="col-sm-12 col-md-12 col-lg-4">
           <Card
             title={inventory.product.name}
-            imageSource={inventory.product.photo ? sampleImage : noImage}
+            image={inventory.product.photo ? sampleImage : noImage}
             imageAlt={inventory.product.name}
             contents={[]}
           />

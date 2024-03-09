@@ -1,16 +1,11 @@
 import React from "react";
 
-const Card: React.FC<CardProps> = ({
-  title,
-  imageSource,
-  imageAlt,
-  contents,
-}) => {
+const Card: React.FC<CardProps> = ({ title, image, imageAlt, contents }) => {
   return (
     <div className="card mt-3 mb-3">
       <label htmlFor="photo-upload">
         <img
-          src={imageSource}
+          src={image}
           className="card-img-top"
           style={{
             width: "250px",
