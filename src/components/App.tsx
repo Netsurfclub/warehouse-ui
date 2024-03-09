@@ -22,6 +22,7 @@ const App: React.FC<AppProps> = () => {
         image={logo}
         mainPagePath={MAIN_PAGE.path}
         pages={[
+          { name: MAIN_PAGE.name, path: MAIN_PAGE.path },
           { name: PAGE_1.name, path: PAGE_1.path },
           { name: PAGE_2.name, path: PAGE_2.path },
         ]}
