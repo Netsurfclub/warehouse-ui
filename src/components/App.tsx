@@ -31,12 +31,12 @@ const App: React.FC<AppProps> = () => {
       <main className="container">
         <Routes>
           <Route
-            path={INVENTORY_PAGE.path}
-            element={<InventoryPage pageName={INVENTORY_PAGE.name} />}
-          />
-          <Route
             path={MAIN_PAGE.path}
             element={<MainPage pageName={MAIN_PAGE.name} />}
+          />
+          <Route
+            path={INVENTORY_PAGE.path}
+            element={<InventoryPage pageName={INVENTORY_PAGE.name} />}
           />
           <Route
             path={PAGE_1.path}
