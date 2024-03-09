@@ -1,8 +1,9 @@
 interface Product {
   id: number;
   name: string;
-  price: double;
+  supplierName: string;
   description: string;
+  price: double;
   photo: string | null;
 }
 

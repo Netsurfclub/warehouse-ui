@@ -5,8 +5,9 @@ export const getInventory = (): Inventory[] => {
       product: {
         id: 1,
         name: "6-os csavar",
+        supplierName: "ACME Corp.",
+        description: "Lorem ipsum dolor sit amet.",
         price: 150,
-        description: "Lorem ipsum dolor sit amet..",
         photo: "sample_image.jpg",
       },
       pieces: 1000,
@@ -16,8 +17,9 @@ export const getInventory = (): Inventory[] => {
       product: {
         id: 2,
         name: "6-os csavar alátét (sima)",
+        supplierName: "ACME Corp.",
+        description: "Lorem ipsum dolor sit amet.",
         price: 20,
-        description: "Lorem ipsum dolor sit amet..",
         photo: null,
       },
       pieces: 1000,
@@ -27,8 +29,9 @@ export const getInventory = (): Inventory[] => {
       product: {
         id: 3,
         name: "6-os csavar alátét (rugós)",
+        supplierName: "ACME Corp.",
+        description: "Lorem ipsum dolor sit amet.",
         price: 25,
-        description: "Lorem ipsum dolor sit amet..",
         photo: null,
       },
       pieces: 1000,

@@ -12,13 +12,20 @@ const InventoryPage: React.FC<PageProps> = () => {
 
   return (
     <div className="row">
-      {inventory.map((inventory: Inventory) => (
-        <div className="col-sm-12 col-md-12 col-lg-4">
+      {inventory.map(({ product }) => (
+        <div key={product.id} className="col-sm-12 col-md-12 col-lg-4">
           <Card
-            title={inventory.product.name}
-            image={inventory.product.photo ? sampleImage : noImage}
-            imageAlt={inventory.product.name}
-            contents={[]}
+            key={product.id}
+            title={product.name}
+            image={product.photo ? sampleImage : noImage}
+            imageAlt={product.name}
+            contents={[
+              {
+                key: "supplierName",
+                value: `Beszállító: ${product.supplierName}`,
+              },
+              { key: "description", value: `Leírás: ${product.description}` },
+            ]}
           />
         </div>
       ))}
