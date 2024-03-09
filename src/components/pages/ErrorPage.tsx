@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import image from "../../images/unplugged_cable.jpg";
 
@@ -10,13 +9,7 @@ const ErrorPage: React.FC<ErrorPageProps> = ({ mainPagePath }) => {
         <div className="text-center">
           <img src={image} alt="logo" style={{ width: "50%", height: "50%" }} />
           <h1>Hiba történt!</h1>
-          <Link
-            className="btn btn-primary"
-            to={mainPagePath}
-            style={{ width: "25%" }}
-          >
-            Főoldal
-          </Link>
+          <h2>A keresett oldal nem található.</h2>
         </div>
       </div>
     </div>
