@@ -1,3 +1,0 @@
-interface ProductCardProps {
-  product: Product;
-}
