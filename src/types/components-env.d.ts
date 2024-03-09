@@ -3,7 +3,7 @@ interface AppProps {
 }
 
 interface NavbarProps {
-  title: string;
+  image: string;
   mainPagePath: string;
   pages: Page[];
 }
