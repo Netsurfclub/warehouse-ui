@@ -8,7 +8,7 @@ const ErrorPage: React.FC<ErrorPageProps> = ({ mainPagePath }) => {
     <div className="row">
       <div className="col-12">
         <div className="text-center">
-          <img src={image} alt="logo" style={{ width: "45%", height: "45%" }} />
+          <img src={image} alt="logo" style={{ width: "50%", height: "50%" }} />
           <h1>Hiba történt!</h1>
           <Link
             className="btn btn-primary"
