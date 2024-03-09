@@ -8,6 +8,13 @@ interface NavbarProps {
   pages: Page[];
 }
 
+interface CardProps {
+  title: string;
+  imageSource: string;
+  imageAlt: string;
+  contents: KeyValuePair<string, string>[];
+}
+
 interface PageProps {
   pageName: string;
 }
