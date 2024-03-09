@@ -10,7 +10,7 @@ const InventoryPage: React.FC<PageProps> = () => {
   return (
     <div className="row">
       {inventory.map((product) => (
-        <div key={product.id} className="col-sm-12 col-md-12 col-lg-4">
+        <div key={product.id} className="col-sm-12 col-md-6 col-lg-4">
           <ProductCard product={product} />
         </div>
       ))}
