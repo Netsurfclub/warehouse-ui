@@ -6,6 +6,7 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, contents }) => {
       <label htmlFor="photo-upload">
         <img
           src={image}
+          alt={imageAlt}
           className="card-img-top"
           style={{
             width: "250px",
@@ -14,7 +15,6 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, contents }) => {
             margin: "0 auto",
             objectFit: "contain",
           }}
-          alt={imageAlt}
         />
       </label>
       <div className="card-body">
