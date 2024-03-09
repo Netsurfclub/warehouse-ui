@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./common/Navbar";
-import MainPage from "./pages/MainPage";
 import InventoryPage from "./pages/InventoryPage";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -27,10 +26,6 @@ const App: React.FC<AppProps> = () => {
       <main className="container">
         <Routes>
           <Route
-            path={MAIN_PAGE.path}
-            element={<MainPage pageName={MAIN_PAGE.name} />}
-          />
-          <Route
             path={INVENTORY_PAGE.path}
             element={<InventoryPage pageName={INVENTORY_PAGE.name} />}
           />
@@ -38,6 +33,7 @@ const App: React.FC<AppProps> = () => {
             path={ERROR_PAGE.path}
             element={<ErrorPage pageName={ERROR_PAGE.name} />}
           />
+          <Route path={"/"} element={<Navigate to={INVENTORY_PAGE.path} />} />
           <Route path={"*"} element={<Navigate to={ERROR_PAGE.path} />} />
         </Routes>
       </main>
