@@ -17,7 +17,3 @@ interface CardProps {
 interface PageProps {
   pageName: string;
 }
-
-interface ErrorPageProps {
-  mainPagePath: string;
-}

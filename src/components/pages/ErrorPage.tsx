@@ -1,26 +1,15 @@
 import React from "react";
 
-import robotImage from "../../images/robot.jpg";
-import { Link } from "react-router-dom";
+import image from "../../images/unplugged_cable.jpg";
 
-const ErrorPage: React.FC<ErrorPageProps> = ({ mainPagePath }) => {
+const ErrorPage: React.FC<PageProps> = () => {
   return (
     <div className="row">
       <div className="col-12">
         <div className="text-center">
-          <img
-            src={robotImage}
-            alt="logo"
-            style={{ width: "45%", height: "45%" }}
-          />
+          <img src={image} alt="logo" style={{ width: "50%", height: "50%" }} />
           <h1>Hiba történt!</h1>
-          <Link
-            className="btn btn-primary"
-            to={mainPagePath}
-            style={{ width: "25%" }}
-          >
-            Főoldal
-          </Link>
+          <h2>A keresett oldal nem található.</h2>
         </div>
       </div>
     </div>

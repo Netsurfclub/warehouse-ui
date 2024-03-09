@@ -48,7 +48,7 @@ const App: React.FC<AppProps> = () => {
           />
           <Route
             path={ERROR_PAGE.path}
-            element={<ErrorPage mainPagePath={MAIN_PAGE.path} />}
+            element={<ErrorPage pageName={ERROR_PAGE.name} />}
           />
           <Route path={"*"} element={<Navigate to={ERROR_PAGE.path} />} />
         </Routes>
