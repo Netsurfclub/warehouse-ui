@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar: React.FC<NavbarProps> = ({ image, mainPagePath, pages }) => {
+const Navbar: React.FC<NavbarProps> = ({ image, pages }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const getNavbarTogglerClass = (): string => "navbar-toggler";

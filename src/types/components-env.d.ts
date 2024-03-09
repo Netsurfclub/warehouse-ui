@@ -4,7 +4,6 @@ interface AppProps {
 
 interface NavbarProps {
   image: string;
-  mainPagePath: string;
   pages: Page[];
 }
 

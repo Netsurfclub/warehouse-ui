@@ -20,7 +20,6 @@ const App: React.FC<AppProps> = () => {
     <BrowserRouter>
       <Navbar
         image={logo}
-        mainPagePath={MAIN_PAGE.path}
         pages={[
           { name: MAIN_PAGE.name, path: MAIN_PAGE.path },
           { name: PAGE_1.name, path: PAGE_1.path },
