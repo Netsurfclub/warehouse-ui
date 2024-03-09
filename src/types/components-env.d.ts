@@ -10,7 +10,3 @@ interface NavbarProps {
 interface PageProps {
   pageName: string;
 }
-
-interface ErrorPageProps {
-  mainPagePath: string;
-}
