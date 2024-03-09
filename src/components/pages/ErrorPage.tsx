@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import robotImage from "../../images/robot.jpg";
-import { Link } from "react-router-dom";
 
 const ErrorPage: React.FC<ErrorPageProps> = ({ mainPagePath }) => {
   return (
