@@ -5,7 +5,7 @@ import Navbar from "./common/Navbar";
 import InventoryPage from "./pages/InventoryPage";
 import ErrorPage from "./pages/ErrorPage";
 
-import { INVENTORY_PAGE, ERROR_PAGE } from "../constants/page.constants";
+import { INVENTORY_PAGE, ERROR_PAGE } from "../constants/app.constants";
 
 import "../index.css";
 
