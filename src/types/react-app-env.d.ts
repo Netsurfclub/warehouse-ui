@@ -5,13 +5,6 @@ declare module "*.jpg";
 
 // Common FC Props types
 
-interface ButtonProps {
-  text: string;
-  url: string;
-  width?: string;
-  disabled?: boolean;
-}
-
 interface CardProps {
   title: string;
   image: string;
