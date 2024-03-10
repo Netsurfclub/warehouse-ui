@@ -5,13 +5,11 @@ declare module "*.jpg";
 
 // Common FC Props types
 
-interface AppProps {
-  applicationName: string;
-}
-
-interface NavbarProps {
-  image: string;
-  pages: Page[];
+interface ButtonProps {
+  text: string;
+  url: string;
+  width?: string;
+  disabled?: boolean;
 }
 
 interface CardProps {
@@ -19,6 +17,17 @@ interface CardProps {
   image: string;
   imageAlt: string;
   contents: KeyValuePair<string, string>[];
+}
+
+interface NavbarProps {
+  image: string;
+  pages: Page[];
+}
+
+// Custom FC Props types
+
+interface AppProps {
+  applicationName: string;
 }
 
 interface ProductCardProps {
