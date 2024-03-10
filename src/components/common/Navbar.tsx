@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ image, pages }) => {
             }
           >
             <div className="navbar-nav flex-grow">
-              {pages.map(({ name, path }) => (
+              {pages.map(({ key: name, value: path }) => (
                 <Link key={name} className="nav-item nav-link" to={path}>
                   {name}
                 </Link>
