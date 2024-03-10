@@ -1,10 +1,8 @@
 // Image types
-
 declare module "*.png";
 declare module "*.jpg";
 
 // Common FC Props types
-
 interface CardProps {
   title: string;
   image: string;
@@ -18,7 +16,6 @@ interface NavbarProps {
 }
 
 // Custom FC Props types
-
 interface AppProps {
   applicationName: string;
 }
@@ -33,15 +30,7 @@ interface PageProps {
   pageName: string;
 }
 
-// Collection types
-
-interface Pages {
-  INVENTORY_PAGE: Page;
-  ERROR_PAGE: Page;
-}
-
 // Custom data model types
-
 interface Product {
   id: number;
   name: string;
@@ -53,7 +42,6 @@ interface Product {
 }
 
 // Other custom types
-
 interface Page {
   name: string;
   path: string;
