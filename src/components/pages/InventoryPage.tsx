@@ -8,13 +8,13 @@ const InventoryPage: React.FC<PageProps> = () => {
   const inventory: Product[] = getInventory();
 
   return (
-    <div className="row">
+    <section className="row">
       {inventory.map((product) => (
-        <div key={product.id} className="col-sm-12 col-md-6 col-lg-4">
+        <article key={product.id} className="col-sm-12 col-md-6 col-lg-4">
           <ProductCard product={product} />
-        </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 };
 
