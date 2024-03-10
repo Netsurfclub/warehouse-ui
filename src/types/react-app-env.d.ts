@@ -1,8 +1,10 @@
 // Image types
+
 declare module "*.png";
 declare module "*.jpg";
 
 // Common FC Props types
+
 interface ButtonProps {
   text: string;
   url: string;
@@ -49,7 +51,7 @@ interface ModalWindowProps {
 
 interface NavbarProps {
   image: string;
-  pages: Page[];
+  pages: KeyValuePair<string, string>[];
 }
 
 interface NumberAddOnInputProps {
@@ -83,22 +85,22 @@ interface TextInputProps {
   errorMessage: string;
 }
 
-// Custom FC Props types
+// Custom FC and Page FC Props types
+
 interface AppProps {
   applicationName: string;
+}
+
+interface PageProps {
+  pageName: string;
 }
 
 interface ProductCardProps {
   product: Product;
 }
 
-// Page FC Props types
-
-interface PageProps {
-  pageName: string;
-}
-
 // Custom data model types
+
 interface Product {
   id: number;
   name: string;
@@ -110,10 +112,6 @@ interface Product {
 }
 
 // Other custom types
-interface Page {
-  name: string;
-  path: string;
-}
 
 interface KeyValuePair<K, V> {
   key: K;
