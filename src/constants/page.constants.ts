@@ -1,12 +1,11 @@
-const pages: Pages = {
-  INVENTORY_PAGE: {
-    name: "Raktárkészlet",
-    path: "/inventory",
-  },
-  ERROR_PAGE: {
-    name: "Error",
-    path: "/error",
-  },
+const INVENTORY_PAGE: Page = {
+  name: "Raktárkészlet",
+  path: "/inventory",
 };
 
-export default pages;
+const ERROR_PAGE: Page = {
+  name: "Error",
+  path: "/error",
+};
+
+export { INVENTORY_PAGE, ERROR_PAGE };
