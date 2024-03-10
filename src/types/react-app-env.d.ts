@@ -42,11 +42,6 @@ interface Product {
 }
 
 // Other custom types
-interface Page {
-  name: string;
-  path: string;
-}
-
 interface KeyValuePair<K, V> {
   key: K;
   value: V;
