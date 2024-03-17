@@ -5,6 +5,13 @@ declare module "*.jpg";
 
 // Common FC Props types
 
+interface ButtonProps {
+  text: string;
+  url: string;
+  width?: string;
+  disabled?: boolean;
+}
+
 interface CardProps {
   title: string;
   image: string;
@@ -12,9 +19,70 @@ interface CardProps {
   contents: KeyValuePair<string, string>[];
 }
 
+interface DropdownProps {
+  name: string;
+  value: string;
+  labelText: string;
+  data: any[];
+  errorMessage: string;
+}
+
+interface ErrorMessageProps {
+  message: string;
+}
+
+interface FileInputProps {
+  name: string;
+  disabled: boolean;
+}
+
+interface ListGroupProps {
+  collection: any[];
+}
+
+interface ModalWindowProps {
+  title: string;
+  content: string;
+  buttonText: string;
+  routingButtonText: string;
+  redirectUrl: string;
+  isSuccessModal: boolean;
+}
+
 interface NavbarProps {
   image: string;
   pages: KeyValuePair<string, string>[];
+}
+
+interface NumberAddOnInputProps {
+  name: string;
+  value: string;
+  minValue: number;
+  addOnText: string;
+  errorMessage: string;
+}
+
+interface NumberInputProps {
+  name: string;
+  value: string;
+  minValue: number;
+  labelText: string;
+  errorMessage: string;
+}
+
+interface TableProps {
+  caption: string;
+  columns: any[];
+  collection: any[];
+}
+
+interface TextInputProps {
+  type: string;
+  name: string;
+  value: string;
+  maxLength: number;
+  labelText: string;
+  errorMessage: string;
 }
 
 // Custom FC and Page FC Props types
